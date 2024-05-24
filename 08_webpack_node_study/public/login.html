@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="img-info"></div>
+        <input type="text" placeholder="用户名" class="user-info" value="13888888888">
+        <input type="password" name="1" id="1" placeholder="密码" class="password" value="246810">
+        <button class="btn" type="button" value="提交">提交</button>
+    </form>
+
+    <!-- 使用cdn中的包，达到体积更小 -->
+    <script src="../dist/login/index.js"></script>
+    <% if(htmlWebpackPlugin.options.useCdn){ %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.6.8/axios.min.js"></script>
+  <% } %>
+</body>
+</html>
